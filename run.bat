@@ -16,17 +16,24 @@ if exist "%script_dir%\%venv_dir%\Scripts\activate" (
     echo Creating virtual environment in "%script_dir%\%venv_dir%"...
     py -%python_version% -m venv "%script_dir%\%venv_dir%"
     call "%script_dir%\%venv_dir%\Scripts\activate"
+)
 
+rem Check if Jupyter is installed
+pip show jupyter >nul 2>&1
+if errorlevel 1 (
+    echo Jupyter is not installed. Installing now...
     echo Installing the requirements...
     python -m pip install --upgrade pip
     python -m pip install -r "%script_dir%\requirements.txt"
-    
     echo Installing Jupyter Notebook...
     python -m pip install jupyter notebook
     python -m pip install traitlets
+) else (
+    echo Jupyter is already installed.
 )
 
 rem Start Jupyter Notebook
 call jupyter notebook
 
 pause
+
