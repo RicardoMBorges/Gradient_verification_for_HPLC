@@ -185,12 +185,15 @@ except FileNotFoundError:
     st.sidebar.warning("Logo not found at static/LAABio.png")
 
 st.markdown(
-    "Upload chromatogram **.txt** files and a gradient table to compare chromatograms "
-    "against the solvent program, mask unwanted RT regions, and compute solvent A/B volumes."
-    " "
-    "Developed by Ricardo M Borges and LAABio-IPPN-UFRJ. contact: ricardo_mborges@yahoo.com.br"
-    " "
-    "Details: https://github.com/RicardoMBorges/Gradient_verification_for_HPLC"
+    """
+    Upload chromatogram **.txt** files and a gradient table to compare chromatograms
+    against the solvent program, mask unwanted RT regions, and compute solvent A/B volumes.  
+
+    Developed by **Ricardo M Borges** and **LAABio-IPPN-UFRJ**  
+    contact: ricardo_mborges@yahoo.com.br  
+
+    🔗 Details: [GitHub repository](https://github.com/RicardoMBorges/Gradient_verification_for_HPLC)
+    """
 )
 
 # PayPal donate button
