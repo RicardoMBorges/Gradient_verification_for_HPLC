@@ -170,6 +170,12 @@ def compute_volumes(gradient_df: pd.DataFrame, flow_mL_min: float) -> pd.DataFra
 # UI
 # --------------------------
 st.title("HPLC Gradient Verification")
+
+# Load the logo
+logo = Image.open("static/LAABio.png")
+# Display the logo in the sidebar or header
+st.image(logo, width=250)
+
 st.markdown(
     "Upload chromatogram **.txt** files and a gradient table to compare chromatograms "
     "against the solvent program, mask unwanted RT regions, and compute solvent A/B volumes."
