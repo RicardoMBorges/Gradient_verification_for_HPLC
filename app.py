@@ -169,11 +169,25 @@ def compute_volumes(gradient_df: pd.DataFrame, flow_mL_min: float) -> pd.DataFra
 # --------------------------
 # UI
 # --------------------------
-st.title("🔬 HPLC Gradient Verification")
+st.title("HPLC Gradient Verification")
 st.markdown(
     "Upload chromatogram **.txt** files and a gradient table to compare chromatograms "
     "against the solvent program, mask unwanted RT regions, and compute solvent A/B volumes."
+    "Developed by Ricardo M Borges and LAABio-IPPN-UFRJ. contact: ricardo_mborges@yahoo.com.br"
+    "Details: https://github.com/RicardoMBorges/Gradient_verification_for_HPLC"
 )
+
+# PayPal donate button
+st.markdown("""
+<hr>
+<center>
+<p>To support the app development:</p>
+<a href="https://www.paypal.com/donate/?business=2FYTFNDV4F2D4&no_recurring=0&item_name=Support+with+%245+→+Send+receipt+to+tlc2chrom.app@gmail.com+with+your+login+email+→+Access+within+24h!&currency_code=USD" target="_blank">
+    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate with PayPal button" border="0">
+</a>
+</center>
+""", unsafe_allow_html=True)
+
 
 with st.sidebar:
     st.header("1) Upload chromatograms (.txt)")
