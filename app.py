@@ -194,7 +194,7 @@ st.markdown(
 
     🔗 Details: [GitHub repository](https://github.com/RicardoMBorges/Gradient_verification_for_HPLC)
 
-    Check also: [DAFdiscovery] (dafdiscovery.streamlit.app/)
+    Check also: [DAFdiscovery] (https://dafdiscovery.streamlit.app/)
     
     Check also: [TLC2Chrom] (https://tlc2chrom.streamlit.app/)
     """
