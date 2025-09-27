@@ -268,7 +268,7 @@ st.subheader("Combined chromatograms")
 if combined.empty:
     st.info("Upload chromatogram files to see the combined table.")
 else:
-    show_df_html(combined, max_rows=20)
+    show_df_html(combined, max_rows=5)
     csv_bytes = combined.to_csv(index=False).encode("utf-8")
     st.download_button("⬇️ Download combined_data.csv", data=csv_bytes, file_name="combined_data.csv", mime="text/csv")
 
