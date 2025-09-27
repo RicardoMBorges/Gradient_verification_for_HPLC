@@ -36,7 +36,7 @@ streamlit run app.py
 
 ---
 
-## 📂 Input Formats
+## Input Formats
 
 ### Chromatogram `.txt` files
 
@@ -70,7 +70,7 @@ streamlit run app.py
 
 ---
 
-## 🖼️ Features
+## Features
 
 * **Interactive plots** (Plotly)
 
@@ -87,7 +87,7 @@ streamlit run app.py
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 * `streamlit`
 * `pandas`
@@ -100,7 +100,7 @@ Optional:
 
 ---
 
-## 📝 Notes
+## Notes
 
 * Large `.txt` files may take longer to render.
 * For deployment, keep logos/images in a `static/` folder inside the repo.
@@ -108,7 +108,7 @@ Optional:
 
 ---
 
-## 📌 Example
+## Example
 
 Upload two `.txt` chromatograms + the example gradient:
 
@@ -116,9 +116,10 @@ Upload two `.txt` chromatograms + the example gradient:
 
 ---
 
-## 👥 Authors
+## Authors
 
 Developed by [Ricardo M. Borges](https://github.com/RicardoMBorges) and collaborators.
  LAABio – IPPN – UFRJ.
 
 ```
+
