@@ -204,6 +204,18 @@ st.markdown("""
 </center>
 """, unsafe_allow_html=True)
 
+TUTORIAL_URL = "https://github.com/RicardoMBorges/Gradient_verification_for_HPLC/blob/main/READme_Streamlit.md"
+
+# Put it wherever you want (main area):
+try:
+    st.link_button("📘 Tutorial", TUTORIAL_URL)
+except Exception:
+    st.markdown(
+        f'<a href="{TUTORIAL_URL}" target="_blank">'
+        '<button style="padding:0.6rem 1rem; border-radius:8px; border:1px solid #ddd; cursor:pointer;">📘 Tutorial</button>'
+        '</a>',
+        unsafe_allow_html=True,
+    )
 
 with st.sidebar:
     st.header("1) Upload chromatograms (.txt)")
