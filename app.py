@@ -193,6 +193,10 @@ st.markdown(
     contact: ricardo_mborges@yahoo.com.br  
 
     🔗 Details: [GitHub repository](https://github.com/RicardoMBorges/Gradient_verification_for_HPLC)
+
+    Check also: [DAFdiscovery] (dafdiscovery.streamlit.app/)
+    
+    Check also: [TLC2Chrom] (https://tlc2chrom.streamlit.app/)
     """
 )
 
