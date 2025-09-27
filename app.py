@@ -169,12 +169,20 @@ def compute_volumes(gradient_df: pd.DataFrame, flow_mL_min: float) -> pd.DataFra
 # --------------------------
 # UI
 # --------------------------
+import streamlit as st
+from pathlib import Path
+from PIL import Image
+
 st.title("HPLC Gradient Verification")
 
-# Load the logo
-logo = Image.open("static/LAABio.png")
-# Display the logo in the sidebar or header
-st.image(logo, width=250)
+STATIC_DIR = Path(__file__).parent / "static"
+LOGO_PATH = STATIC_DIR / "LAABio.png"
+
+try:
+    logo = Image.open(LOGO_PATH)  # raises if missing
+    st.sidebar.image(logo, use_column_width=True)
+except FileNotFoundError:
+    st.sidebar.warning("Logo not found at static/LAABio.png")
 
 st.markdown(
     "Upload chromatogram **.txt** files and a gradient table to compare chromatograms "
