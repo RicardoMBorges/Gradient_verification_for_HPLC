@@ -231,11 +231,12 @@ with st.sidebar:
     m_end = st.number_input("Mask end RT", value=0.0, step=0.5, format="%.2f")
     do_mask = st.checkbox("Apply masking to chromatograms", value=False)
 
-    st.header("4) Gradient input")
+    st.header("HPLC Gradient Plots and Solvent Consumption")
+    st.header("1) Gradient input")
     st.caption("Upload CSV with columns: start_time,end_time,start_B%,end_B% **or** edit below.")
     grad_upload = st.file_uploader("Gradient CSV", type=["csv"], accept_multiple_files=False, key="grad_csv")
 
-    st.header("5) Flow rate")
+    st.header("2) Flow rate")
     flow = st.number_input("Flow (mL/min)", value=1.0, step=0.1, format="%.2f")
 
 default_gradient = pd.DataFrame({
